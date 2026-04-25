@@ -44,13 +44,13 @@ jobs:
 
     - name: Downloading your GSI
       run: |
-        wget -P "./temp" "${{ github.event.inputs.GSI }}"" 
+        wget -P "./temp/https://github.com/Doze-off/crdroid_gsi_treble/releases/download/2025-08-02/crDroid-12.0_GSI_treble_arm64-ab_MICROG-20250802.img.xz" 
         chmod 755 *
         chmod 755 ./bin/*
 
     - name: Building
       run: |
-        ./arm${{ github.event.inputs.ARCH }}_git
+        ./arm64_git
         
     - name: Uploading The Zip
       uses: actions/upload-artifact@v4
