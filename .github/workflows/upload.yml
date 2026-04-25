@@ -2,7 +2,6 @@ name: Custom Rom Builder Samsung Galaxy A11/M11
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
   
 on:
   push:
@@ -20,8 +19,7 @@ on:
         default: '64'                
       NAME:
         description: 'Crdroid 12 for Samsung Galaxy M11'
-        required: true
-        default: 'crDroid.12_0_A11_M11_ARM64_VANILLA'                
+        default: 'crDroid.12_0_A11_M11_ARM64_VANILLA.zip'                
 
 jobs:
   Build:
