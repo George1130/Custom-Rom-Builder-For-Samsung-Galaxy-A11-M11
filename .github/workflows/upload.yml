@@ -44,7 +44,7 @@ jobs:
 
     - name: Downloading your GSI
       run: |
-        wget -P "./temp" ${{ github.event.inputs.GSI }} 
+        wget -P "./temp" "${{ github.event.inputs.GSI }}"" 
         chmod 755 *
         chmod 755 ./bin/*
 
