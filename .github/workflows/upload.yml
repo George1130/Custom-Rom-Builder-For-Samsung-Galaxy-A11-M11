@@ -55,5 +55,5 @@ jobs:
     - name: Uploading The Zip
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ github.event.inputs.NAME }}   # Replace with a suitable name
+        name: "crDroid.12_0_A11_M11_ARM64_VANILLA"   # Replace with a suitable name
         path: ./zip/Custom_Rom_SDM450.zip
