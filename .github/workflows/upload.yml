@@ -1,3 +1,4 @@
+
 name: Custom Rom Builder Samsung Galaxy A11/M11
 
 env:
@@ -39,13 +40,11 @@ jobs:
         wget https://sourceforge.net/projects/samsung-galaxy-a01-m01/files/a11q.zip
         unzip a11q.zip
         rm -r a11q.zip
-
     - name: Downloading your GSI
       run: |
         wget -P ./temp/ "https://github.com/Doze-off/crdroid_gsi_treble/releases/download/2025-08-02/crDroid-12.0_GSI_treble_arm64-ab_MICROG-20250802.img.xz" 
         chmod 755 *
         chmod 755 ./bin/*
-
     - name: Building
       run: |
         ./arm64_git
